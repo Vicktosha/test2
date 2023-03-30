@@ -1,0 +1,26 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rosario:wght@700&display=swap');
+@import 'base/variables';
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+.divider {
+    height: 2px;
+    background: rgba(232, 232, 232, 1);
+}
+body {
+    padding-bottom: 37px
+}
+
+@import 'blocks/header';
+@import 'blocks/header-nav';
+@import 'blocks/promo';
+@import 'blocks/footer';

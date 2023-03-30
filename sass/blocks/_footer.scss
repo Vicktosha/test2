@@ -1,0 +1,122 @@
+.footer {
+    height: 151px;
+    background: #F4F4F4;
+    padding-top: 36px;
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-start;
+    }
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-end;
+        height: 94px;
+    }
+    &__copyright {
+        margin-bottom: 28px;
+    }
+    &__social {
+        margin-bottom: 18px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    &__social-link {
+        margin-left: 12px;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        border: 1px solid rgba(141, 141, 141, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__social-link:hover{
+        border-color: $main-color;
+        box-shadow: inset 0px 0px 15px 0px #e11c4b;
+    }
+}
+
+.header-nav__list_footer {
+    width: 442px;
+}
+
+@media (max-width: 991px){
+    .header-nav__list_footer{
+        display: flex;
+        width: 300px;
+    }
+    .footer {
+        height: 160px;
+        padding-top: 0;
+        position: relative;
+        margin-bottom: -15px;
+        &__nav {
+            flex-direction: column;
+            padding-top: 36px;
+        }
+        .header-nav__menu-item{
+            margin-right: 24px;
+        }
+        .header__item:first-child{
+            margin-right: 24px;
+        }
+        .header-nav__list_footer{
+            width: auto;
+        }
+        &__contacts {
+            margin-top: 19px;
+        }
+        &__wrap {
+            height: 60px;
+            position: relative;
+        }
+        &__copyright {
+            margin-bottom: 18px;
+        }
+        &__social {
+            position: absolute;
+            right: 20px;
+            top: -68px;
+            margin: 0;
+        }
+
+    }
+}
+
+@media (max-width: 575px){
+    
+    .footer{
+        height: 224px;
+        margin-bottom: -40px;
+        &__copyright{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: #8D8D8D;
+            margin-bottom: -26px;
+        }
+        &__social {
+            right: 156px;
+            top: 10px;
+            margin: 0;
+        }
+        &__social-link{
+            background: rgb(255, 255, 255);
+        }
+        &__contacts{
+            margin-top: 10px;
+        }
+        .header-nav__list_footer{
+            display: flex;
+            width: 300px;
+        }
+        .header-nav__menu-link{
+            font-size: 14px;
+        }
+        .header__item{
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <meta name="title" content="Мое портфолио">
+    <meta name="description" content="Тестовое задание по макету Figma">
+    <link rel="stylesheet" href="sass/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__location">
+                    <div class="header__item">
+                        <a>
+                            <img src="icons/citi.svg" alt="citi">
+                            <span>г. Рязань</span>
+                        </a>
+                    </div>
+                    <div class="header__item">
+                        <a>
+                            <img src="icons/shops.svg" alt="shops">
+                           <span>Магазины</span>
+                        </a>
+                    </div>
+                </div>
+                    <a class="header__item" href="tel:88000000000"><img src="icons/phone.svg" alt="phone"><span>8 (800) 000 00 00</span></a>
+            </div>
+        </div>
+                
+        <div class="divider"></div>
+
+        <nav class="header-nav container">
+            <div class="header-nav__nav">
+
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <a class="header-nav__brand" href="/src/index.html"><span>ЭЛЕКТРОСИТИ</span></a>
+                <div class="header-nav__search">
+                    <input name="search" placeholder="Поиск среди товаров" type="text">
+                    <img src="icons/search.svg" alt="search">
+                </div>
+            
+                <ul class="header-nav__list">
+                    <li class="header-nav__item"><a class="header-nav__link" href="#"><img src="icons/user.svg" alt="user"><span class="">Анастасия</span></a></li>
+                    <li class="header-nav__item"><a class="header-nav__link" href="#"><img src="icons/buy.svg" alt="buy"><span class="">Покупки</span></a></li>
+                    <li class="header-nav__item"><a class="header-nav__link" href="#"><img src="icons/heart.svg" alt="like"><span class="">Избранное</span></a></li>
+                    <li class="header-nav__item"><a class="header-nav__link" href="#"><img src="icons/basket.svg" alt="basket"><span class="">Корзина</span></a></li>
+                </ul>
+            </div>
+
+            <ul class="header-nav__menu">
+                <li class="header-nav__menu-item header-nav__menu-item_promotion"><a  href="#"><img src="icons/promotion.svg" alt="promotion">Акции</a></li>
+                <li class="header-nav__menu-item"><a class="header-nav__menu-link" href="#">Смартфоны</a></li>
+                <li class="header-nav__menu-item"><a class="header-nav__menu-link" href="#">Ноутбуки</a></li>
+                <li class="header-nav__menu-item"><a class="header-nav__menu-link" href="#">Телевизоры</a></li>
+                <li class="header-nav__menu-item"><a class="header-nav__menu-link" href="#">Видеотехника</a></li>
+                <li class="header-nav__menu-item"><a class="header-nav__menu-link" href="#">Планшеты</a></li>
+                <li class="header-nav__menu-item"><a class="header-nav__menu-link" href="#">Наушники</a></li>
+                <li class="header-nav__menu-item"><a class="header-nav__menu-link" href="#">Гейминг</a></li>
+                <li class="header-nav__menu-item"><a class="header-nav__menu-link" href="#">Умные часы</a></li>
+                <li class="header-nav__menu-item"><a class="header-nav__menu-link" href="#">Моноблоки</a></li>
+                <li class="header-nav__menu-item"><a class="header-nav__menu-link" href="#">Холодильники</a></li>
+                <li class="header-nav__menu-item"><a class="header-nav__menu-link" href="#">Стиральные машины</a></li>
+                <li class="header-nav__menu-item"><a class="header-nav__menu-link" href="#">Игровые консоли</a></li>
+                <li class="header-nav__menu-item"><a class="header-nav__menu-link" href="#">Комплектующие</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="promo container" id="promo">
+        <h1 class="promo__title">Акции</h1>
+        <div class="promo__nav">
+            <a class="promo__item promo__item_gaming" href="#">
+                <div class="promo__item-wrap">
+                    <h3 class="promo__item-title">Суперскидки на товары для гейминга</h3>
+                    <span class="promo__item-subtitle">c 8 октября до 26 октября</span>
+                </div>
+                <img class="promo__img" src="img/gaming.png" alt="gaming">
+            </a>
+
+            <a class="promo__item promo__item_samsung" href="#">
+                <div class="promo__item-wrap">
+                    <img class="top-logo" src="icons/promo/samsung.svg" alt="samsung">
+                    <h3 class="promo__item-title">Кэшбэк 20% на мониторы Samsung</h3>
+                    <span class="promo__item-subtitle">c 1 октября до 23 октября</span>
+                </div>
+                <img class="promo__img" src="img/samsung.svg" alt="tv">
+                <img class="samsung__img" src="img/vectorSamsung.png" alt="stars">
+            </a>
+
+            <a class="promo__item promo__item_hp" href="#">
+                <div class="promo__item-wrap promo__item-wrap_hp">
+                    <img src="icons/promo/hp.svg" alt="hp" class="aside-logo">
+                        <div class="promo__hp-wrap">
+                            <h3 class="promo__item-title promo__item-title_hp">Скидки до 30% на технику HP</h3>
+                            <span class="promo__item-subtitle">с 28 сентября до 20 октября</span>
+                        </div>
+                </div>
+                <img class="hp__img" src="img/keyboard.png" alt="laptop">
+                <img class="aside__img" src="img/laptop.png" alt="laptop">
+            </a>
+
+            <a class="promo__item promo__item_philips" href="#">
+                <div class="promo__item-wrap">
+                    <img src="icons/promo/philips.svg" alt="philips" class="top-logo">
+                        <h3 class="promo__item-title">Скидка 80% на саундбар</h3>
+                            <span class="promo__item-subtitle">c 28 сентября до 15 октября</span>
+                </div>
+                <img src="img/philips.png" alt="soundbar" class="promo__img">
+            </a>
+
+            <a class="promo__item promo__item_bosch" href="#">
+                <div class="promo__item-wrap promo__item-wrap_bosch">
+                    <img src="icons/promo/bosch.svg" alt="bosch" class="top-logo">
+                        <h3 class="promo__item-title promo__item-title_black">Скидка 50% на второй  товар Bouch</h3>
+                            <span class="promo__item-subtitle promo__item-subtitle_black">c 15 сентября до 26 октября</span>
+                </div>
+                <img src="img/bosch.png" alt="bosch" class="promo__img-bosch">
+                <img src="icons/vector-red.png" alt="bosch" class="promo__vector-bosch">
+            </a>
+
+            <a class="promo__item promo__item_iphone" href="#">
+                <img src="img/iphone_13.png" alt="iphone" class="promo__img-iphone13">
+                <img src="img/iphone.png" alt="iphone" class="promo__img-iphone">
+            </a>
+
+            <a class="promo__item" href="#">
+                <div class="promo__item-wrap">
+                    <h3 class="promo__item-title promo__item-title_opinion">Поделись мнением</h3>
+                        <span class="promo__item-subtitle promo__item-subtitle_opinion">Оставь отзыв и получи 50 бонусных баллов</span>
+                </div>
+                <img src="img/opinion.png" alt="heart" class="aside__img aside__img-opinion">
+            </a>
+
+            <a class="promo__item promo__item_card" href="#">
+                <h3 class="promo__item-title promo__item-title_red">Суперскидки по бонусной карте</h3>
+                <img src="img/brandSale.png" alt="card" class="aside__img aside__img-card">
+            </a>
+
+            <a class="promo__item promo__item_sale" href="#">
+                <div class="promo__item-wrap promo__item-wrap_sale">
+                    <h3 class="promo__item-title promo__item-title_red">Ликвидация!
+                        Скидки до 70%</h3>
+                    <span class="promo__item-subtitle promo__item-subtitle_black">c  28 сентября до 7 октября</span>
+                </div>
+                <img src="img/sale.png" alt="sale" class="promo__img promo__img-sale">
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__nav">
+                <div class="header-nav__list header-nav__list_footer">
+                    <li class="header-nav__menu-item"><a class="header-nav__menu-link" href="/src/index.html">Главная</a></li>
+                    <li class="header-nav__menu-item"><a class="header-nav__menu-link" href="#promo">Акции</a></li>
+                    <li class="header-nav__menu-item"><a class="header-nav__menu-link" href="#">Магазины</a></li>
+                    <li class="header-nav__menu-item"><a class="header-nav__menu-link" href="#">Профиль</a></li>
+                </div>
+                <div class="footer__contacts">
+                    <a class="header__item" href="tel:88000000000"><img src="icons/phone.svg" alt="phone"> 8 (800) 000 00 00</a>
+                        <a class="header__item" href="mailto:electrocity.ru">
+                            <img src="icons/mail.svg" alt="mail">
+                            electrocity.ru
+                        </a>
+                </div>
+            </div>
+    
+            <div class="footer__wrap">
+                    <span class="footer__copyright" >&#169; 2014-2021 «ЭЛЕКТРОСИТИ». Все права защищены</span>
+                <div class="footer__social">
+                    <div class="footer__social-link"><a href="#"><img src="icons/vk.svg" alt="vk"></a></div>
+                    <div class="footer__social-link"><a href="#"><img src="icons/youtube.svg" alt="youtube"></a></div>
+                    <div class="footer__social-link"><a href="#"><img src="icons/tg.svg" alt="tg"></a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

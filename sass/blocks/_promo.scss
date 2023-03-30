@@ -1,0 +1,403 @@
+.promo {
+    min-height: 887px;
+    padding: 36px 0 96px 0;
+    &__title{
+        margin-bottom: 36px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        color: #333333;
+    }
+    &__item {
+        width: 361px;
+        height: 203px;
+        box-shadow: 0px 6px 30px 4px rgba(32, 32, 32, 0.1);
+        border-radius: 10px;
+        background: $main-color;
+        padding: 0 28px 0 28px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        transition: all 0.4s;
+    }
+    &__item:hover{
+        text-decoration: none;
+        
+    }
+    &__item_gaming {
+        background: linear-gradient(89.72deg, #D535E3 0.19%, #6F74E4 99.72%, #0052A4 99.72%);
+    }
+    &__item_samsung{
+        background: #333333;
+    }
+    &__item_hp{
+        background: linear-gradient(180deg, #01B9D5 58.08%, rgba(0, 165, 183, 0) 113.07%);
+        display: inline-block;
+    }
+    &__item_philips{
+        background: radial-gradient(53.2% 53.2% at 66.62% 50.25%, #EC5161 0%, #D60633 0.67%, #121212 100%);
+    }
+    &__item_bosch{
+        background: #E7EBEC;
+    }
+    &__item_iphone{
+        background: #FFFFFF;
+        padding: 22px 0 27px 0;
+    }
+    &__img-iphone13{
+        position: absolute;
+        top: 22px;
+    }
+    &__img-iphone{
+        position: absolute;
+        right: 0;
+        bottom: 27px;
+    }
+    &__item_card {
+        background: #FFFFFF;
+        border:2px solid $main-color;
+    }
+    &__item_sale{
+        background: #FFFFFF;
+        border: 2px solid $main-color;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-items: center;
+        padding-top: 67px;
+    }
+    &__img-sale{
+        position: absolute;
+        left: -2px;
+        top: -2px;
+    }
+    &__nav {
+        display: grid;
+        grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+        gap: 34px;
+    }
+    &__item-title {
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+    &__item-title_red{
+        color: $main-color;
+        width: 150px;
+    }
+    &__item-title_opinion{
+        width: 194px;
+    }
+    &__item-title_black{
+        color: #333333;
+    }
+    &__item-subtitle{
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+        color: #FFFFFF;
+    }
+    &__item-subtitle_opinion{
+        width: 120px;
+    }
+    &__item-subtitle_black{
+        color: #333333;
+    }
+    &__img{
+        z-index: 2;
+    }
+    
+    &__item-wrap_hp {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 190px;
+        padding-top: 22px;
+    }
+    &__hp-wrap{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    &__img-bosch{
+        position: absolute;
+        right: 33px;
+    }
+    &__vector-bosch{
+        position: absolute;
+        right: 35px;
+        top: 10px;
+        width: 135px;
+    }
+    &__item-wrap_bosch{
+        width: 145px;
+    }
+}
+
+.samsung__img {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+.hp__img{
+    position: absolute;
+    bottom: 26px;
+    left: -6px;
+}
+.aside__img{
+    height: 165px;
+    position: absolute;
+    bottom: 26px;
+    right: -8px;
+}
+.aside__img-opinion{
+    height: 159px;
+    bottom: 22px;
+    right: 0px;
+}
+.aside__img-card{
+    height: 174px;
+    bottom: 12px;
+    right: 0;
+}
+
+@media (max-width: 1199px){
+    .promo {
+        min-height: 755px;
+        &__nav {
+            gap: 18px;
+        }
+        &__item {
+            width: 300px;
+            height: 169px;
+            padding: 0 15px 0 15px;
+        }
+        &__item-title {
+            width: 110px;
+            font-size: 17px;
+            line-height: 18px;
+        }
+        &__item-title_opinion{
+            width: 157px;
+        }
+        &__item-title_red{
+            width: 122px;
+            text-align: center;
+        }
+        &__item-subtitle{
+            width: 120px;
+            display: block;
+            font-size: 9px;
+            line-height: 10px;
+        }
+        &__img{
+            width: 140px;
+        }
+        &__item-wrap_hp {
+            width: 166px;
+        }
+        &__item-wrap_sale{
+            position: absolute;
+            top: 50px;
+        }
+        &__item-title_hp{
+            width: 122px;
+        }
+        .hp__img{
+            width: 164px;
+            bottom: 15px;
+            left: -4px;
+        }
+        .aside__img{
+            height: 138px;
+            bottom: 15px;
+            right: -7px;
+        }
+        .aside__img-opinion{
+            right: 0;
+        }
+        .aside__img-card{
+            right: 0;
+        }
+        &__vector-bosch{
+            right: 35px;
+            top: 0px;
+            width: 125px;
+        }
+        &__img-bosch{
+            height: 150px;
+        }
+        &__img-iphone{
+            width: 260px;
+            bottom: 15px;
+        }
+        &__img-iphone13{
+            width: 280px;
+            top: 15px;
+        }
+        &__img-sale{
+            width: 300px;
+        }
+        .samsung__img{
+            height: 100%;
+        }
+
+    }  
+    
+}
+
+@media (max-width: 991px) {
+    .promo {
+        &__nav {
+            display: grid;
+            grid-template: repeat(5,1fr) / 1fr 1fr;
+            gap: 18px;
+        }
+        &__item {
+            width: 355px;
+            height: 200px;
+        }
+        &__img-sale {
+            width: 101%;
+        }
+        .samsung__img {
+            height: 100%;
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .promo {
+        &__item {
+            width: 260px;
+            height: 150px;
+            padding: 0 10px 0 10px;
+        }
+        &__img{
+            width: 125px;
+        }
+        .hp__img{
+            width: 140px;
+        }
+        .aside__img{
+            height: 113px;
+            right: -5px;
+        }
+        &__img-bosch{
+            height: 135px;
+            right: 15px;
+        }
+        &__vector-bosch{
+            right: 15px;
+            top: 2px;
+            width: 118px;
+        }
+        &__img-iphone{
+            width: 240px;
+            bottom: 10px;
+        }
+        &__img-iphone13{
+            width: 240px;
+            top: 10px;
+        }
+        .aside__img-opinion{
+            right: 0;
+        }
+        .aside__img-card{
+            right: 0;
+        }
+        &__img-sale{
+            width: 260px;
+            height: 150px;
+        }
+    }
+}
+
+@media (max-width: 575px){
+    .promo {
+        &__nav {
+            display: grid;
+            grid-template: repeat(9,1fr) / 1fr;
+            gap: 18px;
+        }
+        &__item {
+            width: 300px;
+            height: 169px;
+            padding: 0 15px 0 15px;
+        }
+        &__item-title {
+            width: 110px;
+            font-size: 17px;
+            line-height: 18px;
+        }
+        &__item-title_opinion{
+            width: 157px;
+        }
+        &__item-title_red{
+            width: 122px;
+            text-align: center;
+        }
+        &__item-subtitle{
+            width: 120px;
+            display: block;
+            font-size: 9px;
+            line-height: 10px;
+        }
+        &__img{
+            width: 140px;
+        }
+        &__item-wrap_hp {
+            width: 166px;
+        }
+        &__item-wrap_sale{
+            position: absolute;
+            top: 50px;
+        }
+        &__item-title_hp{
+            width: 122px;
+        }
+        .hp__img{
+            width: 164px;
+            bottom: 15px;
+            left: -4px;
+        }
+        .aside__img{
+            height: 138px;
+            bottom: 15px;
+            right: -7px;
+        }
+        .aside__img-opinion{
+            right: 0;
+        }
+        .aside__img-card{
+            right: 0;
+        }
+        &__vector-bosch{
+            right: 15px;
+            top: 0px;
+            width: 125px;
+        }
+        &__img-bosch{
+            height: 150px;
+        }
+        &__img-iphone{
+            width: 260px;
+            bottom: 15px;
+        }
+        &__img-iphone13{
+            width: 280px;
+            top: 15px;
+        }
+        &__img-sale{
+            width: 300px;
+            height: 169px;
+        }
+
+    }   
+}
+
+
+
